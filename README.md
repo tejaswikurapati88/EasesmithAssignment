@@ -1,4 +1,4 @@
-# uilding the UI for an E-commerce Listing Page
+# Building the UI for an E-commerce Listing Page
 
 In this project I am building the E-commerce website by following [Figma design]([https://github.com/facebook/create-react-app](https://www.figma.com/design/AvK9THieFnvEKfIIupCr2p/Untitled?node-id=1-2014&node-type=instance&t=5hOdB3S18g6jTOhl-0)).
 
