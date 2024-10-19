@@ -88,3 +88,7 @@ action with a simple message (e.g., "Thank you for your interest in
 
 </details>
 
+### Hooks, Controlled Inputs
+
+- Used useState for handling User inputs (email in footer, search bar)
+
