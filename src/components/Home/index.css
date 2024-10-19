@@ -87,3 +87,36 @@
     display: flex;
     
 }
+.sort-cont{
+    display: flex;
+    align-items: center;
+}
+.pro{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+    color: #6A6A6A;
+
+}
+.sortby{
+    display: inline;
+    margin-left: 10px;
+    background-color: #165315;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    width: Hug (139px)px;
+    height: Hug (36px)px;
+    top: 719px;
+    left: 533px;
+    padding: 6px 7px 6px 7px;
+    gap: 15px;
+    opacity: 0px;
+    cursor: pointer;
+    outline: none;
+}

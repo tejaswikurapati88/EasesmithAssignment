@@ -4,7 +4,9 @@ import Header from '../Header'
 import NurseryItems from '../NurseryItems'
 import Filters from '../Filters'
 import Footer from '../Footer'
+import PlantItem from '../PlantItem'
 import { CiSearch } from "react-icons/ci";
+import {useState} from 'react'
 
 const nurseryData=[
     {
@@ -44,7 +46,151 @@ const nurseryData=[
     }
 ]
 
-const Home =()=> (
+const plantsData=[
+    {
+        plantId: 1,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729351426/e1ce63ff429a0c018fd6e2e5dd614458_mhfwez.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 2,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352575/7973d62829a030074ad8b6ad34_ybfghn.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 3,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352621/daa994fdb511faa82ea79a5ef58fbb1a_epvngd.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 4,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729351426/e1ce63ff429a0c018fd6e2e5dd614458_mhfwez.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 5,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352575/7973d62829a030074ad8b6ad34_ybfghn.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 6,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352621/daa994fdb511faa82ea79a5ef58fbb1a_epvngd.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 7,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729351426/e1ce63ff429a0c018fd6e2e5dd614458_mhfwez.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 8,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352575/7973d62829a030074ad8b6ad34_ybfghn.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 9,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352621/daa994fdb511faa82ea79a5ef58fbb1a_epvngd.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 10,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729351426/e1ce63ff429a0c018fd6e2e5dd614458_mhfwez.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 11,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352575/7973d62829a030074ad8b6ad34_ybfghn.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 12,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352621/daa994fdb511faa82ea79a5ef58fbb1a_epvngd.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 13,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729351426/e1ce63ff429a0c018fd6e2e5dd614458_mhfwez.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 14,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352575/7973d62829a030074ad8b6ad34_ybfghn.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    },
+    {
+        plantId: 15,
+        imageUrl: 'https://res.cloudinary.com/dkvptcm7q/image/upload/v1729352621/daa994fdb511faa82ea79a5ef58fbb1a_epvngd.png',
+        name: 'Monsterra',
+        plantDesc: 'Indoor Plant, Low maintenence',
+        rating: '4.9',
+        actualPrice: '359',
+        price: '299',
+    }
+]
+
+const Home =()=> {
+    const [sortBy, setSortBy]= useState('LowToHigh')
+
+    const onSortPrice= event =>{
+        setSortBy(event.target.value)
+    }
+    return (
     <div>
         <TopHeader />
         <Header />
@@ -69,10 +215,23 @@ const Home =()=> (
             </ul>
             <div className='home-body-cont'>
                 <Filters />
+                <div>
+                    <div className='sort-cont'>
+                        <p className='pro'>300 Products</p>
+                        <select className='sortby' value={sortBy} onChange={onSortPrice} >
+                            <option className='option'>SORT BY</option>
+                            <option className='option' name='LowToHigh'>Low to High</option>
+                            <option className='option' name='HighToLow'>High to Low</option>
+                        </select>
+                    </div>
+                    <ul className='ul-nurs'>
+                        {plantsData.map(eachplant => <PlantItem key={eachplant.id} plantDetails={eachplant} />)}
+                    </ul>
+                </div>
             </div>
         </div>
         <Footer />
     </div>
 )
-
+}
 export default Home
