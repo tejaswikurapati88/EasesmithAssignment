@@ -1,0 +1,64 @@
+.footer-bg-cont{
+    background-color: #F0FFE5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer-cont1{
+    display: flex;
+    
+}
+.sub-heading{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #000000;
+}
+.para-footer{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #838383;
+}
+.email-inp{
+    border: 1px solid #0000004D;
+    width: 269px;
+    height: 35px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #999999;
+    background-color: #ffffff;
+    padding-left: 10px;
+
+}
+.subs-btn{
+    background-color: #247822;
+    width: 130px;
+    height: 35px;
+    top: 50px;
+    gap: 0px;
+    border-radius: 30px;
+    border: none;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+
+
+}
