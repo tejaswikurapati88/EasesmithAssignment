@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Building the UI for an E-commerce Listing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I am building the E-commerce website by following [Figma design]([https://github.com/facebook/create-react-app](https://www.figma.com/design/AvK9THieFnvEKfIIupCr2p/Untitled?node-id=1-2014&node-type=instance&t=5hOdB3S18g6jTOhl-0)).
 
-## Available Scripts
+I build this website with skills by creating an app that will display all products in a desktop layout by following cleancode guidlines and creating appropriate components, displaying  data, using **routing** concepts, **Navigation**, and **Adding functionalities** and adding responsiveness to the website.
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+#### Design Files
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<details>
+<summary>Click to view</summary>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- You can check the **Design Files** for different devices <a href="https://www.figma.com/file/5DK9nvTWZ4W0ytHtDrDe56/Tasty_Kitchens" target="_blank">here</a>.
 
-### `npm test`
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Set Up Instructions
 
-### `npm run build`
+<details>
+<summary>Click to view</summary>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Download dependencies by running `npm install`
+- Start up the app using `npm start`
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dependencies Needed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+<summary>Click to view</summary>
 
-### `npm run eject`
+- react-router-dom
+</details>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Completion Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+<summary>Functionality to be added</summary>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app must have the following functionalities
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+- Users should be able to navigate to Home, Cart routes using links in Navbar.
+- Header Section:
+   - A search bar for searching products.
+   - Icons for profile and cart.
+   - Users should be able to navigate to Home route when clicking on **Chaperone** logo.
+- Product List Section:
+  - Display a grid/list of products based on the Figma design.
+  - Each product card should include:
+    - Product Image
+    - Product Name
+    - Price
+    - "View Product" and "Add to Cart" buttons.
+    - Clicking "View Product" should redirect the user to a custom
+"Thank You" page. There will be no product details page, so you
+are required to design a Thank You page from scratch.
+- Home Route
+  - Users should be able to see the sort by icon as shown in the Figma.
+  - Filters :
+    - Type of Plants
+    - Price
+    - Nursery
+    - Ideal Plants Location
+    - Indoor/ Outdoor
+    - Maintenence
+    - Plant Size
+    - Water Schedule
+    - Color
+    - SeasonalLight Efficient
+  - Users should be able to see the footer as shown in Figma.
+  - Users should be able to see Home with highlighted text in Navbar.
+- Cart Route
+  - Clicking “Add to Cart” on any product should open a modal that
+displays the product’s details and an option to confirm adding the
+product to the cart.
+  - The modal design is included in the Figma file and should be
+closely followed.
+- Pagination:
+  - Implement pagination to navigate through multiple product
+listings (functional but mock data is acceptable).
+- Thank You Page:
+  - Create a simple "Thank You" page to which users are redirected
+after clicking "View Product". This page should acknowledge their
+action with a simple message (e.g., "Thank you for your interest in
+[Product Name]!").
+- When the users enter invalid route in the URL then the Page not found Route should be displayed.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</details>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
