@@ -9,19 +9,15 @@
     align-items: center;
     width: 268px;
     border-width: 0px, 0px, 0px, 0px;
-justify-content: space-between;
-margin-bottom: 50px;
-
-    opacity: 0px;
-    
-height: 326.42px;
-top: 784px;
-left: 730px;
-gap: 0px;
-border: 1px solid #0000004D;
-opacity: 0px;
-margin: 10px;
-
+    justify-content: space-between;
+    margin-bottom: 50px; 
+    height: 326.42px;
+    top: 784px;
+    left: 730px;
+    gap: 0px;
+    border: 1px solid #0000004D;
+    opacity: 1;
+    margin: 10px;
 }
 .plant-img{
     max-height: 246px;
@@ -50,7 +46,7 @@ height: 36px;
 top: 1074.42px;
 left: 730px;
 gap: 0px;
-opacity: 0px;
+opacity: 1;
 background: #165315;
 align-self: spread;
 border: none;

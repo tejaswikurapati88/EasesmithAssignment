@@ -19,7 +19,7 @@ top: 87px;
 left: 32px;
 gap: 0px;
 border: 0.8px 0px 0px 0px;
-opacity: 0px;
+opacity: 1;
 border: 0.8px solid #B0B0B0
 }
 .congrants{
@@ -52,7 +52,7 @@ height: 45px;
 top: 514px;
 left: 73px;
 gap: 0px;
-opacity: 0px;
+opacity: 1;
 font-family: Poppins;
 font-size: 16px;
 font-weight: 600;
