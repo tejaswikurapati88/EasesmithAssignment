@@ -2,7 +2,6 @@ import './index.css'
 import TopHeader from '../TopHeader'
 import Header from '../Header'
 import NurseryItems from '../NurseryItems'
-import Filters from '../Filters'
 import Footer from '../Footer'
 import PlantItem from '../PlantItem'
 import { CiSearch } from "react-icons/ci";
@@ -214,8 +213,57 @@ const Home =()=> {
                 {nurseryData.map(each => <NurseryItems key={each.id} itemDetails={each} />)}
             </ul>
             <div className='home-body-cont'>
-                <Filters />
-                <div>
+                <div className='bg-filters-cont'>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Filter</p>
+                        <p className='filter-text'>CLEAR ALL</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Type of Plants</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Price</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Nursery</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Ideal Plants Location</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Indoor / Outdoor</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Maintenence</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Plant Size</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Water Schedule</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Color</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Seasonal</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+                    <div className='filter-cont'>
+                        <p className='filter-text'>Light Efficient</p>
+                        <p className='filter-text'>+</p>
+                    </div>
+            </div>
+                <div className='body-cont-co'>
                     <div className='sort-cont'>
                         <p className='pro'>300 Products</p>
                         <select className='sortby' value={sortBy} onChange={onSortPrice} >
