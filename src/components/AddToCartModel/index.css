@@ -1,0 +1,68 @@
+.cart-bg-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cart-top-heading{
+    font-family: Poppins;
+font-size: 17px;
+font-weight: 400;
+line-height: 25.5px;
+text-align: center;
+color: #0F4811;
+
+}
+.hori{
+    width: 389px;
+height: 0px;
+top: 87px;
+left: 32px;
+gap: 0px;
+border: 0.8px 0px 0px 0px;
+opacity: 0px;
+border: 0.8px solid #B0B0B0
+}
+.congrants{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: #165315;
+    margin-top: 50px;
+    
+}
+.order-img{
+    align-self: center;
+    margin-top: 10px;
+}
+.order-text{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+color: #165315;
+margin-top: 30px;
+
+}
+.shopping{
+    width: 307px;
+height: 45px;
+top: 514px;
+left: 73px;
+gap: 0px;
+opacity: 0px;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: #ffffff;
+background: #165315;
+text-align: center;
+border: none;
+cursor: pointer;
+margin-top: 20px;
+margin-bottom: 40px;
+}

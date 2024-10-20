@@ -224,8 +224,8 @@ const Home =()=> {
                             <option className='option' name='HighToLow'>High to Low</option>
                         </select>
                     </div>
-                    <ul className='ul-nurs'>
-                        {plantsData.map(eachplant => <PlantItem key={eachplant.id} plantDetails={eachplant} />)}
+                    <ul className='ul-nurs plants-ul'>
+                        {plantsData.map(eachplant => <PlantItem key={eachplant.plantId} plantDetails={eachplant} />)}
                     </ul>
                 </div>
             </div>

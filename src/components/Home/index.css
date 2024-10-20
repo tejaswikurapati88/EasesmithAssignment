@@ -83,6 +83,9 @@
     align-self: flex-start;
     padding-inline-start: 0px;
 }
+.plants-ul{
+    flex-wrap: wrap;
+}
 .home-body-cont{
     display: flex;
     
