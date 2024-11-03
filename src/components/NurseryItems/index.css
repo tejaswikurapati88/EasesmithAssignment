@@ -16,3 +16,18 @@
     color: #838383;
 
 }
+@media (max-width: 576px) {
+    .nursery-img{
+        height: 80px;
+    }
+    .nur-list{
+        width: 100px;
+
+    }
+    .nurs-list-cont{
+        margin: 5px;
+    }
+    .nurs-para{
+        font-size: 11px;
+    }
+}

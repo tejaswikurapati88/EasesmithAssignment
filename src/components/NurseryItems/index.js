@@ -6,7 +6,7 @@ const Nursery=(props)=>{
     return (
         <li className='nur-list'>
             <div className='nurs-list-cont'>
-                <img src={imgUrl} alt='nursery-img'/>
+                <img src={imgUrl} alt='nursery-img' className='nursery-img'/>
                 <p className='nurs-para'>{desc}</p>
             </div>
         </li>

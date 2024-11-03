@@ -183,12 +183,27 @@ const plantsData=[
     }
 ]
 
+
+
 const Home =()=> {
     const [sortBy, setSortBy]= useState('LowToHigh')
+    const [isStickey, setSticky]= useState(false)
+
+    const fixSticky = ()=>{
+        if (window.scrollY >= 630){
+            setSticky(true)
+        }else{
+            setSortBy(false)
+        }
+    }
 
     const onSortPrice= event =>{
         setSortBy(event.target.value)
     }
+
+    window.addEventListener('scroll', fixSticky)
+
+    const stickyClass= isStickey? 'stickey bg-filters-cont' : 'bg-filters-cont'
     return (
     <div>
         <TopHeader />
@@ -213,7 +228,7 @@ const Home =()=> {
                 {nurseryData.map(each => <NurseryItems key={each.id} itemDetails={each} />)}
             </ul>
             <div className='home-body-cont'>
-                <div className='bg-filters-cont'>
+                <div className={stickyClass}>
                     <div className='filter-cont'>
                         <p className='filter-text'>Filter</p>
                         <p className='filter-text'>CLEAR ALL</p>
@@ -262,7 +277,7 @@ const Home =()=> {
                         <p className='filter-text'>Light Efficient</p>
                         <p className='filter-text'>+</p>
                     </div>
-            </div>
+                </div>
                 <div className='body-cont-co'>
                     <div className='sort-cont'>
                         <p className='pro'>300 Products</p>

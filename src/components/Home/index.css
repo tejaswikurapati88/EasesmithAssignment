@@ -5,9 +5,15 @@
     padding-left: 60px;
     padding-right: 60px;
 }
+.stickey{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
 .body-cont-co{
     flex-shrink: 1;
     flex-grow: 0;
+    width: 80%;
 }
 .search-cont{
     display: flex;
@@ -86,6 +92,7 @@
     align-items: center;
     /*align-self: flex-start;*/
     padding-inline-start: 0px;
+    
 }
 .plants-ul{
     flex-wrap: wrap;
@@ -131,7 +138,6 @@
 .bg-filters-cont{
     width: 250px;
     height: 715px;
-    top: 719px;
     left: 64px;
     gap: 0px;
     opacity: 1;
@@ -157,4 +163,18 @@ line-height: 19.36px;
 text-align: left;
 color: #6E6E6E;
 
+}
+@media (max-width: 576px) {
+    .bg-filters-cont{
+        display: none;
+    }
+    .plants-ul{
+        display: inline;
+    }
+    .body-cont-co{
+        width: 100%;
+    }
+    .ul-nurs{
+        flex-wrap: wrap;
+    }
 }

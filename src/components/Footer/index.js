@@ -13,7 +13,7 @@ const Footer =()=>{
     return (
         <div className='footer-bg-cont'>
             <div className='footer-cont1'>
-                <div>
+                <div className='cont-footer1'>
                     <h1 className='sub-heading'>SUBSCRIBE TO OUR NEWSLETTER</h1>
                     <p className='para-footer'>Lorem ipsum dolor sit amet. 
                         Aut ipsam<br/> illum et nostrum quidem aut necesbus enim
@@ -27,7 +27,7 @@ const Footer =()=>{
                     />
                     <button className='subs-btn'>SUBSCRIBE</button>
                 </div>
-                <div>
+                <div className='cont-footer2'>
                     <h1 className='sub-heading'>ABOUT US</h1>
                     <p className='para-footer'>Our Story</p>
                     <p className='para-footer'>Blogs</p>
@@ -35,7 +35,7 @@ const Footer =()=>{
                     <p className='para-footer'>Contact Us</p>
                     <p className='para-footer'>Help & Support</p>
                 </div>
-                <div>
+                <div className='cont-footer3'>
                     <h1 className='sub-heading'>Our Services</h1>
                     <p className='para-footer'>Book Maali</p>
                     <p className='para-footer'>Plant Day Care</p>
@@ -43,7 +43,7 @@ const Footer =()=>{
                     <p className='para-footer'>Plants & Pots</p>
                     <p className='para-footer'>Gardening Tools</p>
                 </div>
-                <div>
+                <div className='cont-footer4'>
                     <h1 className='sub-heading'>USEFUL LINKS</h1>
                     <p className='para-footer'>My Account</p>
                     <p className='para-footer'>Orders & Returns</p>
@@ -53,7 +53,7 @@ const Footer =()=>{
                     <p className='para-footer'>Return, Refund & Replacement Policy</p>
                         
                 </div>
-                <div>
+                <div className='cont-footer5'>
                     <h1 className='sub-heading'>GET IN TOUCH</h1>
                     <p className='para-footer'>Address: F-262, First Floor,<br/> Sushant Lok Phase-III,<br/> Sector-57, Gurgaon,<br/> Haryana, 
                         India 122003</p>
